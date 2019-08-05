@@ -65,7 +65,6 @@ void serialEvent()
   {
     // get the new byte:
     char inChar = (char)Serial.read(); 
-    //Serial.write(inChar);
     // add it to the inputString:
     data += inChar;
     // if the incoming character is a newline or a carriage return, set a flag
