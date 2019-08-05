@@ -67,7 +67,7 @@ void serialEvent()
     char inChar = (char)Serial.read(); 
     // add it to the inputString:
     data += inChar;
-    // if the incoming character is a newline or a carriage return, set a flag
+    // if the incoming character is a newline, set a flag
     // so the main loop can do something about it:
     if (inChar == '\n') {
       stringComplete = true;
